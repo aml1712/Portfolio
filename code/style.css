@@ -1,0 +1,505 @@
+body{
+    margin: 0;
+    background-color: white;
+}
+
+/* Keep Navigation at Top of Screen */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Custom Font for Title */
+h1{
+     font-family: "Ephesis", cursive;
+}
+
+/* Custom Font for Navigation Text */
+nav a{
+    font-family: "IBM Plex Serif", serif;
+    font-weight: 500;
+}
+
+
+/* Title & Navigation Menu */
+nav{
+    width: 100%;
+    background-color: #D2E2EC;
+    display: flex;
+    align-items: center;
+    padding: 20px 30px;
+}
+
+ /* Amanda's Portfolio Text */
+nav h1 {
+    margin: 0;
+    margin-right: 30px;
+    font-size: 75px;
+    letter-spacing: 4px;
+    white-space: nowrap;
+    color: #3A2119;
+}
+
+ /* Navigation List */
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+
+ /* Navigation Text */
+nav a {
+    color: #3A2119;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+/* Link hover effect */
+nav a:hover {
+    text-decoration: underline;
+    text-decoration-color: #79A3C3;
+}
+
+/* INTRODUCTION BOX */
+
+.intro-box {
+    width: 95%;
+    min-height: 600px;
+    background-color: #E6D7C3;
+    margin: 20px auto;
+    border-radius: 30px;
+    padding: 50px;
+    box-sizing: border-box;
+
+    display: grid;
+    grid-template-columns: 50px 1fr 1fr 100px;
+    gap: 35px;
+}
+
+.timeline {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.timeline::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    bottom: 10px;
+    width: 2px;
+    background-color: #3A2119;
+}
+
+.timeline-item {
+    position: relative;
+    z-index: 2;
+}
+
+.circle {
+    width: 18px;
+    height: 18px;
+    border: 2px solid #3A2119;
+    background-color: #E6D7C3;
+    border-radius: 50%;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.about-section h2 {
+    font-family: "Roboto Slab", serif;
+    color: #3A2119;
+    font-size: 24px;
+    margin: 0 0 20px 0;
+}
+
+.about-section p {
+    font-family: "IBM Plex Serif", serif;
+    color: #3A2119;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.about-title {
+    font-family: "Ephesis", cursive;
+    color: #3A2119;
+    font-size: 75px;
+
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 500px;
+    height: 500px;
+    object-fit: cover;
+}
+
+
+
+/* RESUME SECTION */
+    .resume-pics {
+    padding: 50px 30px;
+    background-color: white;
+    }
+
+    .resume-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    }
+
+    .resume-header h2 {
+    font-family: "IBM Plex Serif", serif;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin: 0;
+    }
+
+    .resume-grid {
+    display: flex;
+    gap: 28px;
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    }
+
+    .resume-grid::-webkit-scrollbar {
+    display: none;
+    }
+
+    .resume-card {
+    flex: 0 0 300px;
+    width: 300px;
+    border-radius: 16px;
+    overflow: hidden;
+    background-color: #A0BEDA;
+    }
+
+    .resume-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+    }
+
+    .resume-card:nth-child(3) img {
+        object-position: left center;
+    }
+
+    .resume-card:nth-child(4) img {
+        object-position: left center;
+    }
+
+    .resume-card:nth-child(5) img {
+        object-position: left center;
+    }
+
+    .resume-card:nth-child(6) img {
+        object-position: center 80%;
+    }
+
+    .resume-title {
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "IBM Plex Serif", serif;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #3A2119;
+    text-decoration: none;
+    }
+
+    /* REMOVE UNDERLINES FROM RESUME LINKS */
+    .resume-grid a,
+    .resume-grid a:visited,
+    .resume-grid a:hover,
+    .resume-grid a:active {
+    text-decoration: none;
+    color: inherit;
+    }
+
+    .resume-card:hover {
+    background-color: white;
+    }
+
+    /* END OF RESUME & EXPERIENCE SECTION */
+
+
+
+   
+/* COURSES SECTION */
+    .courses-pics {
+    padding: 50px 30px;
+    background-color: white;
+    }
+
+    .courses-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    }
+
+    .courses-header h2 {
+    font-family: "IBM Plex Serif", serif;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin: 0;
+    }
+
+    .courses-grid {
+    display: flex;
+    gap: 28px;
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    }
+
+    .courses-grid::-webkit-scrollbar {
+    display: none;
+    }
+
+    .courses-card {
+    flex: 0 0 300px;
+    width: 300px;
+    border-radius: 16px;
+    overflow: hidden;
+    background-color: #D2E2EC;
+    }
+
+    .courses-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+    }
+
+    .courses-card:nth-child(3) img {
+        object-position: left center;
+    }
+
+
+    .courses-title {
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "IBM Plex Serif", serif;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #3A2119;
+    text-decoration: none;
+    }
+
+    /* REMOVE UNDERLINES FROM RESUME LINKS */
+    .courses-grid a,
+    .courses-grid a:visited,
+    .courses-grid a:hover,
+    .courses-grid a:active {
+    text-decoration: none;
+    color: inherit;
+    }
+
+    .courses-card:hover {
+    background-color: white;
+    }
+
+    /* END OF COURSES SECTION */
+
+
+    
+
+
+    /* DESIGN WORKS SECTION */
+    .bracelet-section {
+    width: 100%;
+    padding: 50px 40px;
+    box-sizing: border-box;
+}
+
+
+/* HEADER */
+
+.bracelet-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.bracelet-header h2 {
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin: 0;
+}
+
+.view-all {
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #222;
+    text-decoration: none;
+}
+
+
+/* =========================
+   CATEGORY BUTTONS
+   ========================= */
+
+.bracelet-buttons {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 30px;
+}
+
+.style-button {
+    padding: 15px 28px;
+
+    border: 1.5px solid #222;
+    border-radius: 30px;
+
+    background-color: white;
+
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 2px;
+
+    cursor: pointer;
+}
+
+
+/* ACTIVE BUTTON */
+
+.style-button.active {
+    background-color: #222;
+    color: white;
+}
+
+
+/* HOVER */
+
+.style-button:hover {
+    background-color: #222;
+    color: white;
+}
+
+
+/* =========================
+   PRODUCT PANELS
+   ========================= */
+
+.product-panel {
+    display: none;
+
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+}
+
+
+/* SHOW ACTIVE PANEL */
+
+.product-panel.active {
+    display: grid;
+}
+
+
+/* =========================
+   PRODUCT CARDS
+   ========================= */
+
+.product-card {
+    min-width: 0;
+}
+
+.product-card img {
+    width: 100%;
+    height: 430px;
+
+    object-fit: cover;
+
+    display: block;
+
+    border-radius: 12px;
+}
+
+.product-card h3 {
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 19px;
+    font-weight: 500;
+    margin: 15px 0 3px;
+}
+
+.product-card p {
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 16px;
+    color: #777;
+    margin: 0 0 5px;
+}
+
+.product-card strong {
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 18px;
+}
+
+/* END OF DESIGN WORK SECTION */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
